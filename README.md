@@ -107,4 +107,8 @@ After downloading or cloning the Git Repository
   3. and type ***npm install*** to install all packages of Dependencies and Dev_Dependencies 
 
 ---
+## Contributors
+[CONTRIBUTORS](CONTRIBUTORS)
+
+---
 <p style="text-align: center"> Copyright &copy; 2024 James Brel All Rights Reserved</p>

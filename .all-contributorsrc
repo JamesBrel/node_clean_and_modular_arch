@@ -1,0 +1,17 @@
+{
+    "projectName": "Node Server Clean And Modular Architecture",
+    "projectOwner": "James Brel",
+    "repoType": "github",
+    "repoHost": "https://github.com",
+    "files": [
+      "CONTRIBUTORS.md"
+    ],
+    "imageSize": 100,
+    "commit": false,
+    "contributorsPerLine": 7,
+    "linkToUsage": true,
+    "skipCi": true,
+    "commitConvention": "angular",
+    "contributors": []
+  }
+  

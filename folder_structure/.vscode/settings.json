@@ -24,5 +24,6 @@
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
   "typescript.referencesCodeLens.enabled": true,
+  "jest.autoRun": "off",
 
 }
