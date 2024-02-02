@@ -1,6 +1,6 @@
 # Node Server : Clean and Modular Architecture
 
-### Author : Utech
+### Author : James Brel
 
 ### Contact : thecoder38@gmail.com 
 ---
