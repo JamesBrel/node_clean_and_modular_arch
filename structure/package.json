@@ -1,10 +1,11 @@
 {
-  "name": "name_of_project",
+  "name": "node_server",
   "version": "1.0.0",
   "description": "description_of_project",
   "type": "module",
   "engines": {
-    "node": "^18.18.0"
+    "node": "^18x",
+    "vscode": "^1.0.0"
   },
   "main": "./build/index.js",
   "scripts": {
@@ -26,6 +27,7 @@
     "clean-docs": "rm -r ./docs"
   },
   "keywords": [
+    "node",
     "typescript",
     "express",
     "inversify",
@@ -35,7 +37,17 @@
     "type": "git",
     "url": "git+url"
   },
-  "author": "owner_of_project",
+  "author": {
+    "name": "James Brel",
+    "email": "thecoder38@gmail.com"
+  },
+  "icon": "./typescript.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark",
+    "background": "transparent"
+    
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.9",
