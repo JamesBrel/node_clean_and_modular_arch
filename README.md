@@ -5,7 +5,7 @@
 ### Contact : thecoder38@gmail.com 
 ---
 ## Architecture 
-   the architecture of each feature is based on the clean architecture of uncle bob which is constituted mainly of 3 layers :
+   the architecture of each feature is based on the clean architecture of Uncle Bob which is constituted mainly of 3 layers :
    - Data
    - Domain
    - Controllers  
@@ -101,4 +101,4 @@ After downloading or cloning the Git Repository
   
   3. and type ***npm install*** to install all packages of Dependencies and Dev_Dependencies 
 ---
-<p style="text-align: center"> Copyright &copy; 2024 Utech All Rights Reserved</p>
+<p style="text-align: center"> Copyright &copy; 2024 James Brel All Rights Reserved</p>
