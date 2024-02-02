@@ -108,7 +108,14 @@ After downloading or cloning the Git Repository
 
 ---
 ## Contributors
-[CONTRIBUTORS](CONTRIBUTORS)
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ---
 <p style="text-align: center"> Copyright &copy; 2024 James Brel All Rights Reserved</p>
