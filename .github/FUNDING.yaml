@@ -1,6 +1,11 @@
 # These are supported funding model platforms
 
 github: [JamesBrel]
-custom: ['https://github.com/sponsors/jamesbrel', 'link2']
+custom: [
+    {
+        name: "GitHub Sponsors",
+        link: "https://github.com/sponsors/JamesBrel"
+    }
+    ]
+    
   
- 
