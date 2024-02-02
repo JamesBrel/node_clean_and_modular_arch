@@ -1,5 +1,5 @@
 {
-  "name": "node_server",
+  "name": "name_of_app",
   "version": "1.0.0",
   "description": "description_of_project",
   "type": "module",
@@ -38,12 +38,10 @@
     "url": "git+url"
   },
   "author": {
-    "name": "James Brel",
-    "email": "thecoder38@gmail.com"
+    "name": "author_name"
   },
-  "icon": "./typescript.png",
-  
   "license": "MIT",
+  
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@babel/types": "^7.23.9",

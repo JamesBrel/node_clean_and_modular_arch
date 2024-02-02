@@ -4,6 +4,11 @@
 
 ### Contact : thecoder38@gmail.com 
 ---
+
+<img src="img/typescript.png" alt="logo" width="200" height="200">
+
+---
+
 ## Architecture 
    the architecture of each feature is based on the clean architecture of Uncle Bob which is constituted mainly of 3 layers :
    - Data
@@ -90,7 +95,7 @@
 
 After downloading or cloning the Git Repository
 
-  1. go to the clean_and_modular_architecture folder and copy the folders
+  1. go to the **folder_structure** folder and copy the content
    
   2. go into your **package.json file**, fill the following points:
    
@@ -100,5 +105,6 @@ After downloading or cloning the Git Repository
      - "author" : Specify the Project Author (Organisation name)
   
   3. and type ***npm install*** to install all packages of Dependencies and Dev_Dependencies 
+
 ---
 <p style="text-align: center"> Copyright &copy; 2024 James Brel All Rights Reserved</p>
