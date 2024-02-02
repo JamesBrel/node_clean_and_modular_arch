@@ -42,25 +42,7 @@
     "email": "thecoder38@gmail.com"
   },
   "icon": "./typescript.png",
-  "galleryBanner": {
-    "color": "#C80000",
-    "theme": "dark",
-    "background": "transparent"
-  },
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/JamesBrel"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/feross"
-    },
-    {
-      "type": "consulting",
-      "url": "https://feross.org/support"
-    }
-  ],
+  
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.9",
