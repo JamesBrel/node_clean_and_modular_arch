@@ -24,7 +24,7 @@
 
 ## General Folder Structure Tree 
 ```
-📦clean_and_modular_structure
+📦project
  ┣ 📂.vscode
  ┃ ┗ 📜settings.json
  ┣ 📂envs
@@ -52,10 +52,12 @@
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂interfaces
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜hello_to_world_inter.ts
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂models
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂reposit_impls
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜system_greet_the_world_reposit_impl.ts
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂domain
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂entities
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂reposit_interfaces
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜system_greet_the_world_reposit_inter.ts
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂usecases
@@ -77,6 +79,7 @@
  ┃ ┃ ┃ ┃ ┗ 📂security
  ┃ ┗ 📜index.ts
  ┣ 📂test
+ ┃ ┗ 📜.gitkeep
  ┣ 📜.eslintignore
  ┣ 📜.eslintrc
  ┣ 📜.gitignore
