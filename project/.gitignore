@@ -1,4 +1,7 @@
-CONTRIBUTORS.md
-img/
-.all-contributorsrc
-CODE_OF_CONDUCT.md
+# -- Enabled these --
+
+# node_modules/
+# trash/
+# envs/
+# build/
+# docs/
