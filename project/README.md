@@ -95,7 +95,7 @@
 
 After downloading or cloning the Git Repository
 
-  1. go to the **folder_structure** folder and copy the content
+  1. go to the **base_structure** folder and copy all the content in your server's project
    
   2. go into your **package.json file**, fill the following points:
    
@@ -105,17 +105,6 @@ After downloading or cloning the Git Repository
      - "author" : Specify the Project Author (Organisation name)
   
   3. and type ***npm install*** to install all packages of Dependencies and Dev_Dependencies 
-
----
-## Contributors
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ---
 <p style="text-align: center"> Copyright &copy; 2024 James Brel All Rights Reserved</p>
