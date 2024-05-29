@@ -1,6 +1,6 @@
 import bodyParser from "body-parser";
 import cors from "cors";
-import {Express} from "express-serve-static-core";
+import express, { Application } from "express";
 import morgan from "morgan";
 
 class MiddleConfig {
@@ -10,12 +10,14 @@ class MiddleConfig {
    * @param _express express name
    * @returns {null} ne retorne rien
    */
-  public static middle(_app: Express, _express: typeof import("express")) {
-    _app.use(cors({origin: "*"}));
-    _app.use(bodyParser.json());
+
+  public static middle(_app: Application) {
+    _app.use(cors());
     _app.use(bodyParser.urlencoded({extended: true}));
-    _app.use(_express.json());
+    _app.use(bodyParser.json());
     _app.use(morgan("dev"));
+    _app.use("/uploads", express.static("uploads"));
   }
 }
-export {MiddleConfig};
+export { MiddleConfig };
+

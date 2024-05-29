@@ -1,5 +1,8 @@
+import { Result } from "../../../../../../shared/results/type.js";
+
 interface ISystemGreetTheWorldReposit {
-  systemSayHelloToWorld(): string;
+  systemSayHelloToWorld(): Promise<Result<string, undefined>>;
 }
 
-export {ISystemGreetTheWorldReposit};
+export { ISystemGreetTheWorldReposit };
+

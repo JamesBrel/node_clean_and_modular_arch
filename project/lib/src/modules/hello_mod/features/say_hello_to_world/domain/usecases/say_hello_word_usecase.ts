@@ -1,6 +1,8 @@
-import {inject, injectable} from "inversify";
-import {SystemGreetTheWorldRepositImpl} from "../../data/reposit_impls/system_greet_the_world_reposit_impl.js";
-import {ISystemGreetTheWorldReposit} from "../reposit_interfaces/system_greet_the_world_reposit_inter.js";
+import { inject, injectable } from "inversify";
+
+import { Result } from "../../../../../../shared/results/type.js";
+import { SystemGreetTheWorldRepositImpl } from "../../data/reposit_impls/system_greet_the_world_reposit_impl.js";
+import { ISystemGreetTheWorldReposit } from "../reposit_interfaces/system_greet_the_world_reposit_inter.js";
 
 @injectable()
 class SayHelloWordUsecase {
@@ -12,9 +14,10 @@ class SayHelloWordUsecase {
     this._iSystemGreetTheWorldReposit = _iSystemGreetTheWorldReposit;
   }
 
-  public execute(): string {
-    return this._iSystemGreetTheWorldReposit.systemSayHelloToWorld();
+  public async execute(): Promise<Result<string, undefined>> {
+    return await this._iSystemGreetTheWorldReposit.systemSayHelloToWorld();
   }
 }
 
-export {SayHelloWordUsecase};
+export { SayHelloWordUsecase };
+

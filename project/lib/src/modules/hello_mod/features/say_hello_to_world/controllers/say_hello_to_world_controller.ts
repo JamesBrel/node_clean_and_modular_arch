@@ -1,10 +1,11 @@
-import {Request, Response} from "express";
+import { Request, Response } from "express";
 import httpStatus from "http-status";
-import {inject} from "inversify";
-import {controller, httpGet} from "inversify-express-utils";
-import {hello_api} from "../../../../../shared/constants/api.const.js";
-import {v1} from "../../../../../shared/constants/version.const.js";
-import {SayHelloWordUsecase} from "../domain/usecases/say_hello_word_usecase.js";
+import { inject } from "inversify";
+import { controller, httpGet, request, response } from "inversify-express-utils";
+import { hello_api } from "../../../../../shared/constants/api_const.js";
+import { v1 } from "../../../../../shared/constants/version_const.js";
+import { Success } from "../../../../../shared/results/result_success.js";
+import { SayHelloWordUsecase } from "../domain/usecases/say_hello_word_usecase.js";
 
 @controller(hello_api)
 class SayHelloToWorldController {
@@ -16,19 +17,27 @@ class SayHelloToWorldController {
   }
 
   @httpGet("/")
-  public async getHelloWorld(_req: Request, _res: Response) {
-    let _apiVersion = _req.header("Accept-Version");
+  public async getHelloWorld(
+    @request() _req: Request,
+    @response() _res: Response
+  ) {
+    let _apiVersion = _req.header("Api-Version");
     switch (_apiVersion) {
       case v1:
-        let _helloWordMessage: string = this._sayHelloWordUsecase.execute();
-        return _res.status(httpStatus.OK).json({message: _helloWordMessage});
-
+        let _result = await this._sayHelloWordUsecase.execute();
+        if (_result instanceof Success) {
+          _res.status(httpStatus.OK).json({
+            message: "system greet successfully",
+            data: _result.data
+          });
+        }
+        break;
       default:
-        return _res
-          .status(httpStatus.NOT_FOUND)
-          .json({message: "version not exists"});
+        _res.status(httpStatus.NOT_FOUND).json({message: "version not exists"});
+        break;
     }
   }
 }
 
-export {SayHelloToWorldController};
+export { SayHelloToWorldController };
+

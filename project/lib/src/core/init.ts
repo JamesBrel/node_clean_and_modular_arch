@@ -1,15 +1,22 @@
 import dotenv from "dotenv";
-import express from "express";
+import path from "path";
 import "reflect-metadata";
-import {MiddleConfig} from "./configs/middle.config.js";
-import ServerConfig from "./configs/server.config.js";
+
+import {fileURLToPath} from "url";
+import {MongooseConfig} from "../shared/services/mongoose/configs/mongoose_config.js";
+import {ServerConfig} from "./configs/server_config.js";
 class Init {
   public static async start() {
-    dotenv.config();
-    const _app = express();
-    ServerConfig.server().then(() => {
-      MiddleConfig.middle(_app, express);
+    const _dirname = path.dirname(fileURLToPath(import.meta.url));
+    dotenv.config({
+      path: path.join(_dirname, `../../../envs/${process.env.NODE_ENV}.env`)
+    });
+
+    //* HttpServer
+    ServerConfig.httpServer().then((_server) => {
+      MongooseConfig.mongoose();
     });
   }
 }
+
 export {Init};

@@ -1,7 +1,9 @@
 # -- Enabled these --
 
-# node_modules/
-# trash/
-# envs/
-# build/
-# docs/
+# /node_modules/
+# /trash/
+# /envs/
+# /build/
+# /docs/
+# /uploads/
+# ecosystem.config.cjs
